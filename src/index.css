@@ -1,0 +1,134 @@
+/* index.css */
+
+/* 全体のフォントと背景 */
+body {
+  font-family: 'Orbitron', sans-serif; /* サイバーチックなフォントに変更 */
+  background: linear-gradient(to right, #210a39, #17418a); 
+  color: #f0f0f0; /* 明るい文字色 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* ヘッダー */
+h1 {
+  color: #00ffcc; /* ネオン風の色 */
+  font-size: 3rem;
+  text-align: center;
+  margin: 50px 0;
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.7), 0 0 20px rgba(0, 255, 204, 0.5); /* 光の効果 */
+}
+
+/* 段落 */
+p {
+  color: #cccccc;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 30px 0;
+  font-weight: 300;
+}
+
+/* コンテナ */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* リンクの基本スタイル */
+a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin: 10px 0;
+  text-shadow: 0 0 8px rgba(0, 255, 204, 0.5);
+}
+
+/* リンクにホバーした時のスタイル */
+a:hover {
+  color: #ff00ff;
+  text-decoration: underline;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 0 0 20px rgba(255, 0, 255, 0.5);
+}
+
+/* フォーム全体のスタイル */
+form {
+  background-color: rgba(15, 15, 45, 0.9); /* 半透明のダークバックグラウンド */
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 255, 204, 0.3);
+  backdrop-filter: blur(5px); /* 背景のぼかし効果 */
+}
+
+/* ラベルのスタイル */
+label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ccc;
+  margin: 12px 0 8px;
+  text-shadow: 0 0 5px rgba(0, 255, 204, 0.7);
+}
+
+/* 入力フィールドのスタイル */
+input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #1a1a2e; /* ダークな入力フィールド */
+  color: #f0f0f0;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 入力フィールドにフォーカス時のスタイル */
+input:focus {
+  border-color: #00ffcc; /* フォーカス時のネオンカラー */
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.7);
+}
+
+/* ボタンのスタイル */
+button {
+  padding: 15px 30px;
+  background-color: #00ffcc;
+  color: #ccc;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 255, 204, 0.4);
+}
+
+/* ボタンのホバー時のスタイル */
+button:hover {
+  background-color: #ff00ff;
+  color: #0e0e2d;
+  box-shadow: 0 4px 15px rgba(255, 0, 255, 0.6);
+  transform: scale(1.05); /* 少し大きくなるアニメーション */
+}
+
+/* ボタンを無効化する場合のスタイル */
+button:disabled {
+  background-color: #444;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* ボーダーのデザイン */
+input,
+button {
+  border: 2px solid #444;
+  background: rgba(0, 0, 0, 0.3);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}

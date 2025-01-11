@@ -1,0 +1,61 @@
+/* src/components/Header.css */
+
+/* ヘッダーのスタイル */
+.header {
+    display: flex;
+    justify-content: flex-start; /* ロゴを中央に配置 */
+    align-items: center;
+    height: 100px; /* ヘッダーの高さ */
+    background-color: #1c1c1c; /* ヘッダーの背景色 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* ヘッダーに影をつける */
+    padding: 10px 20px;
+  }
+  
+  /* ロゴのスタイル */
+  .logo {
+    font-size: 3rem; /* フォントサイズ */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* FAN の部分 */
+  .logo-text {
+    color: #00ffcc; /* サイバー風のカラー */
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.7), 0 0 20px rgba(0, 255, 204, 0.5); /* 光沢感を追加 */
+  }
+  
+  /* letter の部分 */
+  .logo-letter {
+    color: #ff00ff; /* ピンクのネオンカラー */
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.7), 0 0 20px rgba(255, 0, 255, 0.5); /* 光沢感 */
+  }
+  
+  /* ヘッダーにホバー効果を追加 */
+  .header:hover .logo-text {
+    text-shadow: 0 0 20px rgba(0, 255, 204, 1), 0 0 30px rgba(0, 255, 204, 0.7);
+  }
+  
+  .header:hover .logo-letter {
+    text-shadow: 0 0 20px rgba(255, 0, 255, 1), 0 0 30px rgba(255, 0, 255, 0.7);
+  }
+
+.logout-link {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin: 10px 0;
+  text-shadow: 0 0 8px rgba(0, 255, 204, 0.5);
+  cursor: pointer; /* ホバー時のカーソルをポインターに */
+}
+
+.logout-link:hover {
+  color: #ff00ff;
+  text-decoration: underline;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 0 0 20px rgba(255, 0, 255, 0.5);
+}
+  
+  .user-name {
+    font-weight: bold;
+  }
