@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function LoginForm({ setUser }) {
+function LoginForm({ setUser, setUserToken }) {
   const [formData, setFormData] = useState({ email: '', password: '' });
   const [message, setMessage] = useState('');
   const navigate = useNavigate();
@@ -25,7 +25,12 @@ function LoginForm({ setUser }) {
 
       const data = await response.json();
       if (response.ok) {
-        setUser({ id: data.user.id, name: data.user.name }); // ログイン状態を更新
+        setUser({
+          id: data.user.id,
+          name: data.user.name,
+          points: data.user.points,
+        });
+        setUserToken(data.token); // トークンを保存
         navigate('/'); // ホームページにリダイレクト
       } else {
         setMessage(data.error || 'ログインに失敗しました。');

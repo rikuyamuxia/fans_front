@@ -27,6 +27,7 @@ function Header({ user, onLogout }) {
           {user && (
             <>
               <li className="user-name">ようこそ、{user.name}</li>
+              <li className="user-name">ポイント: {user.points}pt</li>
               <li>
               <span onClick={onLogout} className="logout-link">ログアウト</span>
               </li>

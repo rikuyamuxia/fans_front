@@ -10,9 +10,6 @@ function Home() {
       <div className="container">
         <Link to="/payment-form">ポイント購入</Link>
       </div>
-      <div className="container">
-        <Link to="/result">結果</Link>
-      </div>
     </div>
   );
 }
